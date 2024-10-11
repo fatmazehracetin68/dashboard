@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  input {
+    display: none;
+  }
+  .nav-text {
+    display: none;
+  }
+}
+.navbar:has(input:checked) .nav-text {
+  display: block;
+}
